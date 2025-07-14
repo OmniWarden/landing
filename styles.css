@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(45deg, #00ddeb, #ff6f61);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: fadeIn 1.5s ease-out;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #b0b0b0;
+    animation: fadeIn 2s ease-out 0.5s;
+    animation-fill-mode: both;
+}
+
+footer {
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 0.9rem;
+    color: #888;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.2rem;
+    }
+}
